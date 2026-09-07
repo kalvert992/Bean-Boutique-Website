@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique | Events & Workshops</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap"><a class="logo" href="index.html">Bean <span>Boutique</span></a><button
+                class="menu-toggle" aria-label="Open navigation">☰</button>
+            <nav><a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a
+                    class="active" href="events.html">Events</a><a href="offers.html">Offers</a><a href="cart.html">Cart
+                    <span id="cart-count">0</span></a></nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <p class="section-label">Events & Workshops</p>
+                <h1>Learn, taste and connect.</h1>
+                <p>Reserve a place at our upcoming coffee sessions.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container event-layout">
+                <div>
+                    <article class="event-card"><span class="tag">Saturday • 10:00</span>
+                        <h2>Coffee Tasting Session</h2>
+                        <p>Compare different flavour profiles and learn how origin and roasting influence taste.</p>
+                        <p><b>Places:</b> 12 • <b>Fee:</b> $12</p>
+                    </article>
+                    <article class="event-card"><span class="tag">Sunday • 14:00</span>
+                        <h2>Home Brewing Class</h2>
+                        <p>Learn basic brewing techniques and how to choose the right grind size.</p>
+                        <p><b>Places:</b> 10 • <b>Fee:</b> $18</p>
+                    </article>
+                    <article class="event-card"><span class="tag">Friday • 17:30</span>
+                        <h2>Meet the Roaster</h2>
+                        <p>Ask questions about roasting and discover how we develop our house blends.</p>
+                        <p><b>Places:</b> 15 • <b>Fee:</b> Free</p>
+                    </article>
+                </div>
+                <form class="form-card" action="mailto:events@beanboutique.example" method="post" enctype="text/plain">
+
+                    <h2>Register for an event</h2>
+
+                    <label for="first-name">First name</label>
+                    <input id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last-name" required>
+
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="event">Choose event</label>
+                    <select id="event" name="event">
+                        <option>Coffee Tasting Session</option>
+                        <option>Home Brewing Class</option>
+                        <option>Meet the Roaster</option>
+                    </select>
+
+
+                    <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="light">
+                    </div>
+
+                    <button class="btn" type="submit">Register by email</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div><a class="logo" href="index.html">Bean <span>Boutique</span></a>
+                <p>Quality coffee, useful gear and a friendly community.</p>
+            </div>
+            <div>
+                <h3>Explore</h3><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a
+                    href="events.html">Events</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>24 Coffee Lane, Downtown</p>
+                <p>Yangon, Myanmar</p>
+                <p>Email: contact@beanboutique.com</p>
+                <p>Open daily: 8:00 AM–6:00 PM</p>
+            </div>
+        </div>
+        <div class="copyright">© 2026 Bean Boutique Coffee Shop</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
