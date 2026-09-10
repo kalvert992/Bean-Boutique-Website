@@ -371,7 +371,7 @@ a {
     display:flex
 }
 .modal-box {
-    background:#fffaf4;
+    background:#fffaf4f1;
     border-radius:18px;
     padding:35px;
     max-width:500px;
