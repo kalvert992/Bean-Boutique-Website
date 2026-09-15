@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -6,18 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Boutique | Events & Workshops</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container nav-wrap"><a class="logo" href="index.html">Bean <span>Boutique</span></a><button
-                class="menu-toggle" aria-label="Open navigation">☰</button>
-            <nav><a href="index.html">Home</a><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a
-                    class="active" href="events.html">Events</a><a href="offers.html">Offers</a><a href="cart.html">Cart
-                    <span id="cart-count">0</span></a></nav>
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html">Bean <span>Boutique</span></a>
+            <button class="menu-toggle" aria-label="Open navigation">☰</button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="coffee.html">Coffee</a>
+                <a href="equipment.html">Equipment</a>
+                <a class="active" href="events.html">Events</a>
+                <a href="offers.html">Offers</a>
+                <a href="cart.html">Cart <span id="cart-count">0</span></a>
+            </nav>
         </div>
     </header>
+
     <main>
         <section class="page-hero">
             <div class="container">
@@ -26,26 +35,63 @@
                 <p>Reserve a place at our upcoming coffee sessions.</p>
             </div>
         </section>
+
         <section class="section">
-            <div class="container event-layout">
-                <div>
-                    <article class="event-card"><span class="tag">Saturday • 10:00</span>
-                        <h2>Coffee Tasting Session</h2>
-                        <p>Compare different flavour profiles and learn how origin and roasting influence taste.</p>
-                        <p><b>Places:</b> 12 • <b>Fee:</b> $12</p>
-                    </article>
-                    <article class="event-card"><span class="tag">Sunday • 14:00</span>
-                        <h2>Home Brewing Class</h2>
-                        <p>Learn basic brewing techniques and how to choose the right grind size.</p>
-                        <p><b>Places:</b> 10 • <b>Fee:</b> $18</p>
-                    </article>
-                    <article class="event-card"><span class="tag">Friday • 17:30</span>
-                        <h2>Meet the Roaster</h2>
-                        <p>Ask questions about roasting and discover how we develop our house blends.</p>
-                        <p><b>Places:</b> 15 • <b>Fee:</b> Free</p>
-                    </article>
+            <div class="container">
+
+                <div class="section-heading">
+                    <h2>Upcoming Events & Workshops</h2>
+                    <p>Join us to taste, learn and discover more about coffee.</p>
                 </div>
-                <form class="form-card" action="mailto:events@beanboutique.example" method="post" enctype="text/plain">
+
+                <div class="product-grid">
+
+                    <article class="event-card">
+                        <div class="product-image">
+                            <img src="images/coffee-tasting-session.jpg"
+                                alt="Coffee tasting session with cups and spoons">
+                        </div>
+
+                        <div class="product-body">
+                            <span class="tag">Saturday • 10:00</span>
+                            <h2>Coffee Tasting Session</h2>
+                            <p>Compare different flavour profiles and learn how origin and roasting influence taste.
+                            </p>
+                            <p><b>Capacity:</b> 12 • <b>Fee:</b> $12</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="product-image">
+                            <img src="images/home-brewing.jpg"
+                                alt="Person preparing coffee during a home brewing class">
+                        </div>
+
+                        <div class="product-body">
+                            <span class="tag">Sunday • 14:00</span>
+                            <h2>Home Brewing Class</h2>
+                            <p>Learn basic brewing techniques and how to choose the right grind size.</p>
+                            <p><b>Capacity:</b> 10 • <b>Fee:</b> $18</p>
+                        </div>
+                    </article>
+
+                    <article class="event-card">
+                        <div class="product-image">
+                            <img src="images/meet-the-roaster.jpg"
+                                alt="Coffee roasting equipment used during a roasting demonstration">
+                        </div>
+
+                        <div class="product-body">
+                            <span class="tag">Friday • 17:30</span>
+                            <h2>Meet the Roaster</h2>
+                            <p>Ask questions about roasting and discover how we develop our house blends.</p>
+                            <p><b>Capacity:</b> 15 • <b>Fee:</b> Free</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <form class="form-card event-registration" action="mailto:contact@beanboutique.com">
 
                     <h2>Register for an event</h2>
 
@@ -65,26 +111,49 @@
                         <option>Meet the Roaster</option>
                     </select>
 
-
                     <div class="cf-turnstile" data-sitekey="0x4AAAAAAEskHBtlmQzDWaT0" data-theme="light">
                     </div>
 
                     <button class="btn" type="submit">Register by email</button>
 
                 </form>
+
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="container footer-grid">
-            <div><a class="logo" href="index.html">Bean <span>Boutique</span></a>
-                <p>Quality coffee, useful gear and a friendly community.</p>
-            </div>
             <div>
-                <h3>Explore</h3><a href="coffee.html">Coffee</a><a href="equipment.html">Equipment</a><a
-                    href="events.html">Events</a>
+                <a class="logo" href="index.html">Bean <span>Boutique</span></a>
+                <p>Quality coffee, useful gear and a friendly community.</p>
+                <div class="footer-social">
+
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Follow Bean Boutique on Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="Follow Bean Boutique on YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener"
+                        aria-label="Follow Bean Boutique on TikTok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+
+                </div>
             </div>
+
+            <div>
+                <h3>Explore</h3>
+                <a href="coffee.html">Coffee</a>
+                <a href="equipment.html">Equipment</a>
+                <a href="events.html">Events</a>
+            </div>
+
             <div>
                 <h3>Contact</h3>
                 <p>24 Coffee Lane, Downtown</p>
@@ -93,9 +162,13 @@
                 <p>Open daily: 8:00 AM–6:00 PM</p>
             </div>
         </div>
+
         <div class="copyright">© 2026 Bean Boutique Coffee Shop</div>
     </footer>
+
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
