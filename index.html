@@ -7,6 +7,7 @@
   <meta name="description" content="Bean Boutique Coffee Shop">
   <title>Bean Boutique | Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -31,7 +32,6 @@
 
   <main>
 
-
     <section class="hero">
       <div class="container hero-content">
 
@@ -50,7 +50,6 @@
 
       </div>
     </section>
-
 
 
     <section class="section">
@@ -96,18 +95,19 @@
     </section>
 
 
-
     <section class="section soft">
       <div class="container">
 
         <div class="section-heading">
           <p class="section-label">Featured</p>
-          <h2>Popular picks</h2>
+          <h2>Popular Picks</h2>
+          <p>Explore some of our featured coffee, equipment and events.</p>
         </div>
 
-        <div class="product-grid">
+        <div class="featured-slideshow">
 
-          <article class="product-card">
+
+          <article class="featured-slide active">
 
             <div class="product-image">
               <img src="images/house-blend.jpeg" alt="House Blend coffee">
@@ -130,7 +130,8 @@
           </article>
 
 
-          <article class="product-card">
+
+          <article class="featured-slide">
 
             <div class="product-image">
               <img src="images/french-press.png" alt="French Press coffee maker">
@@ -153,7 +154,8 @@
           </article>
 
 
-          <article class="product-card">
+
+          <article class="featured-slide">
 
             <div class="product-image">
               <img src="images/midnight-roast.png" alt="Mountain Roast coffee">
@@ -175,11 +177,56 @@
 
           </article>
 
+
+
+          <article class="featured-slide">
+
+            <div class="product-image">
+              <img src="images/coffee-tasting-session.jpg" alt="Coffee tasting session with cups and spoons">
+            </div>
+
+            <div class="product-body">
+              <span class="tag">Saturday • 10:00</span>
+
+              <h3>Coffee Tasting Session</h3>
+
+              <p>Compare different flavour profiles and learn how origin and roasting influence taste.</p>
+
+              <p><b>Capacity:</b> 12 • <b>Fee:</b> $12</p>
+
+              <a class="btn small" href="events.html">
+                View Event
+              </a>
+            </div>
+
+          </article>
+
+
+
+          <button class="slide-button previous" type="button" aria-label="Previous featured item">
+            &#10094;
+          </button>
+
+          <button class="slide-button next" type="button" aria-label="Next featured item">
+            &#10095;
+          </button>
+
+        </div>
+
+
+
+        <div class="slide-dots">
+          <button class="slide-dot active" type="button" aria-label="Show slide 1"></button>
+
+          <button class="slide-dot" type="button" aria-label="Show slide 2"></button>
+
+          <button class="slide-dot" type="button" aria-label="Show slide 3"></button>
+
+          <button class="slide-dot" type="button" aria-label="Show slide 4"></button>
         </div>
 
       </div>
     </section>
-
 
 
     <section class="section">
@@ -246,6 +293,7 @@
 
   </main>
 
+
   <section class="section soft">
 
     <div class="container">
@@ -278,7 +326,6 @@
   </section>
 
 
-
   <footer class="footer">
 
     <div class="container footer-grid">
@@ -291,6 +338,26 @@
         <p>
           Quality coffee, useful gear and a friendly community.
         </p>
+
+
+        <div class="footer-social">
+
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+            aria-label="Follow Bean Boutique on Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+            aria-label="Follow Bean Boutique on YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="Follow Bean Boutique on TikTok">
+            <i class="bi bi-tiktok"></i>
+          </a>
+
+        </div>
+
       </div>
 
 
@@ -326,7 +393,6 @@
   </footer>
 
 
-
   <div class="modal" id="welcome-modal" aria-hidden="true">
 
     <div class="modal-box">
@@ -356,6 +422,7 @@
     </div>
 
   </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="js/script.js"></script>
