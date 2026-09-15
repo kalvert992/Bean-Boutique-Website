@@ -171,9 +171,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (checkout) {
     checkout.addEventListener("click", () => {
-      alert(
-        "Checkout is not connected to online payments in this prototype."
-      );
+      cart = [];
+      saveCart();
+
+      alert("Checkout completed. Thank you for your order!");
     });
   }
 
@@ -238,3 +239,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Popular Picks slideshow
+const slides = document.querySelectorAll(".featured-slide");
+const dots = document.querySelectorAll(".slide-dot");
+const previousButton = document.querySelector(".slide-button.previous");
+const nextButton = document.querySelector(".slide-button.next");
+
+let currentSlide = 0;
+
+function showSlide(index) {
+
+    slides.forEach(function(slide) {
+        slide.classList.remove("active");
+    });
+
+    dots.forEach(function(dot) {
+        dot.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+    dots[index].classList.add("active");
+
+    currentSlide = index;
+}
+
+if (slides.length > 0) {
+
+    nextButton.addEventListener("click", function() {
+
+        currentSlide++;
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        showSlide(currentSlide);
+    });
+
+
+    previousButton.addEventListener("click", function() {
+
+        currentSlide--;
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        showSlide(currentSlide);
+    });
+
+
+    dots.forEach(function(dot, index) {
+
+        dot.addEventListener("click", function() {
+            showSlide(index);
+        });
+
+    });
+
+}
